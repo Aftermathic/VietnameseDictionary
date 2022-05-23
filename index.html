@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>English-Vietnamese (Tiếng Anh-Việt)</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="icon.png">
+</head>
+
+<body>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3/brython.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3/brython_stdlib.js"></script>
+
+    <form action="words.html"> <input type="submit" value="Words" /> </form>
+    <form action="https://github.com/Aftermathic/VietnameseDictionary" target="_blank"> <input type="submit" value="Github"> </form>
+    <form action="https://en.wikipedia.org/wiki/Vietnamese_language" target="_blank"> <input type="submit" value="About Vietnamese"> </form>
+    
+    <h1> Vietnamese Dictionary </h1>
+    <input id="searchbar" type="text" placeholder="Type English..."> <button id="searchbutton"> Search </button>
+
+    <p id="foundwords"></p>
+
+    <div id="bottom"> <p> Bugs? Message <strong>aftermathic#8216</strong> on Discord, or email <strong>aftermathic.oofhead@gmail.com</strong></p> </div>
+
+    <body onload="brython()">
+        <script type="text/python" src="wordfinder.py"></script>
+    
+</body>
+
+</html>

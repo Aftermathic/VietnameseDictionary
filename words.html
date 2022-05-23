@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>English-Vietnamese (Tiếng Anh-Việt)</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="icon.png">
+</head>
+
+<body>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3/brython.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3/brython_stdlib.js"></script>
+
+    <form action="index.html"> <input type="submit" value="Go Back" /> </form>
+    
+    <h1> Vietnamese Words</h1>
+    <p id="nouns"></p>
+    <p id="adjectives"></p>
+    <p id="verbs"></p>
+    <p id="phrases"></p>
+    <p id="pronouns"></p>
+
+    <body onload="brython()">
+        <script type="text/python" src="show-words.py"></script>
+    
+</body>
+
+</html>
